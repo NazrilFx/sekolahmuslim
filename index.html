@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Sekolah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="bg-white text-gray-800 overflow-x-hidden scroll-smooth pt-16">
+
+    <!-- NAVBAR GLASS -->
+    <header class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/40 shadow-md z-50 border-b border-white/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-24 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-600">SMA Muslim</h1>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#visimisi" class="text-gray-700 hover:text-blue-600 transition">Visi & Misi</a>
+                <a href="#fasilitas-heading" class="text-gray-700 hover:text-blue-600 transition">Fasilitas</a>
+                <a href="#testimoni-heading" class="text-gray-700 hover:text-blue-600 transition">Testimoni</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+        class="min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-24 py-20 bg-gradient-to-r from-blue-100 to-white">
+        <div class="w-full lg:w-1/2 space-y-6">
+            <h1 class="text-4xl lg:text-6xl font-bold leading-tight" id="hero-title">
+                Selamat Datang di <br>
+                <span class="text-blue-600">SMA Muslim</span>
+            </h1>
+            <p class="text-lg text-gray-600" id="hero-subtitle">
+                Sekolah unggulan yang membentuk generasi cerdas, berkarakter, dan siap menghadapi masa depan.
+            </p>
+            <a href="#testimoni"
+                class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition inline-block">
+                Daftar Sekarang
+            </a>
+        </div>
+        <div class="w-full lg:w-1/2 mt-10 lg:mt-0 relative" id="hero-image">
+            <img src="header.jpeg" alt="Sekolah"
+                class="rounded-xl shadow-lg w-full object-cover">
+
+            <!-- Glassmorphism box -->
+            <div
+                class="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-white/30 backdrop-blur-md rounded-xl shadow-lg p-4 md:p-6 max-w-xs">
+                <h3 class="text-lg font-semibold text-blue-800">Lingkungan Nyaman</h3>
+                <p class="text-sm text-gray-700 mt-1">Didesain untuk menunjang proses belajar yang kondusif &
+                    menyenangkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISI & MISI -->
+    <section class="py-20 px-6 lg:px-24 bg-white">
+        <div class="max-w-4xl mx-auto text-center space-y-6" id="visimisi">
+            <h2 class="text-3xl font-bold text-blue-600">Visi & Misi</h2>
+            <p class="text-gray-700">Menjadi sekolah terbaik yang mencetak generasi unggul dalam akademik, spiritual,
+                dan sosial.</p>
+            <div class="grid md:grid-cols-2 gap-8 mt-10">
+                <div class="p-6 border rounded-lg shadow backdrop-blur-sm bg-white/50" id="visi">
+                    <h3 class="text-xl font-semibold text-blue-500 mb-2">Visi</h3>
+                    <p>Mewujudkan lulusan yang berprestasi, berakhlak mulia, dan berwawasan global.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow backdrop-blur-sm bg-white/50" id="misi">
+                    <h3 class="text-xl font-semibold text-blue-500 mb-2">Misi</h3>
+                    <ul class="list-disc ml-5 text-left space-y-2">
+                        <li>Menyelenggarakan pendidikan berkualitas dan berbasis karakter.</li>
+                        <li>Mengembangkan potensi siswa di bidang akademik dan non-akademik.</li>
+                        <li>Mendorong pembelajaran aktif dan kreatif.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FASILITAS -->
+    <section class="bg-blue-50 py-20 px-6 lg:px-24">
+        <div class="text-center mb-12" id="fasilitas-heading">
+            <h2 class="text-3xl font-bold text-blue-700">Fasilitas Unggulan</h2>
+            <p class="text-gray-600 mt-2">Fasilitas lengkap untuk mendukung pembelajaran dan pengembangan siswa</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center" id="fasilitas">
+            <div class="p-6 rounded-lg shadow backdrop-blur-md bg-white/60 hover:shadow-lg transition">
+                <img src="https://img.icons8.com/ios-filled/100/000000/library.png" class="mx-auto mb-4 w-16" />
+                <h4 class="font-semibold text-lg mb-2">Perpustakaan Digital</h4>
+                <p class="text-sm text-gray-600">Koleksi ribuan buku & e-book dengan akses cepat dan mudah.</p>
+            </div>
+            <div class="p-6 rounded-lg shadow backdrop-blur-md bg-white/60 hover:shadow-lg transition">
+                <img src="https://img.icons8.com/ios-filled/100/000000/computer.png" class="mx-auto mb-4 w-16" />
+                <h4 class="font-semibold text-lg mb-2">Lab Komputer Modern</h4>
+                <p class="text-sm text-gray-600">Dilengkapi perangkat terbaru untuk pembelajaran digital.</p>
+            </div>
+            <div class="p-6 rounded-lg shadow backdrop-blur-md bg-white/60 hover:shadow-lg transition">
+                <img src="https://img.icons8.com/ios-filled/100/000000/soccer-ball.png" class="mx-auto mb-4 w-16" />
+                <h4 class="font-semibold text-lg mb-2">Lapangan Olahraga</h4>
+                <p class="text-sm text-gray-600">Mendukung siswa aktif secara fisik dan mental.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="py-20 px-6 lg:px-24 bg-white">
+        <div class="text-center mb-10" id="testimoni-heading">
+            <h2 class="text-3xl font-bold text-blue-600">Apa Kata Alumni?</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto" id="testimoni">
+            <div class="p-6 rounded-lg shadow backdrop-blur-md bg-gray-100/60">
+                <p class="italic text-gray-700">"SMA Muslim memberikan pengalaman belajar terbaik dan membentuk
+                    karakter saya."</p>
+                <h4 class="mt-4 font-semibold text-blue-600">– Rina, Mahasiswa ITB</h4>
+            </div>
+            <div class="p-6 rounded-lg shadow backdrop-blur-md bg-gray-100/60">
+                <p class="italic text-gray-700">"Fasilitas dan guru-gurunya luar biasa. Saya bangga pernah sekolah di
+                    sini."</p>
+                <h4 class="mt-4 font-semibold text-blue-600">– Andi, Karyawan Startup</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-600 text-white py-8 text-center">
+        <p>&copy; 2025 SMA Muslim. All rights reserved.</p>
+    </footer>
+
+    <!-- GSAP Animasi -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("#hero-title", { opacity: 0, y: -50, duration: 1, delay: 0.2 });
+        gsap.from("#hero-subtitle", { opacity: 0, y: 20, duration: 1, delay: 0.6 });
+        gsap.from("#hero-button", { opacity: 0, scale: 0.8, duration: 0.8, delay: 1.2 });
+        gsap.from("#hero-image", { opacity: 0, x: 100, duration: 1, delay: 1.0 });
+
+        gsap.from("#visimisi", { scrollTrigger: "#visimisi", opacity: 0, y: 50, duration: 1 });
+        gsap.from(["#visi", "#misi"], {
+            scrollTrigger: "#visimisi",
+            opacity: 0,
+            y: 30,
+            stagger: 0.2,
+            duration: 1
+        });
+
+        gsap.from("#fasilitas-heading", {
+            scrollTrigger: "#fasilitas-heading",
+            opacity: 0,
+            y: 40,
+            duration: 1
+        });
+
+        gsap.from("#fasilitas > div", {
+            scrollTrigger: {
+                trigger: "#fasilitas",
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            stagger: 0.2
+        });
+
+        gsap.from("#testimoni-heading", {
+            scrollTrigger: "#testimoni-heading",
+            opacity: 0,
+            y: 40,
+            duration: 1
+        });
+
+        gsap.from("#testimoni div", {
+            scrollTrigger: "#testimoni",
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            stagger: 0.3
+        });
+    </script>
+</body>
+
+</html>
